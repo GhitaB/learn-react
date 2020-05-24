@@ -5,6 +5,14 @@
     <script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      /* low budget styling =)) */
+
+      h1.heading {
+        color: pink;
+      }
+
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -38,8 +46,9 @@
     -->
 
     <script type="text/babel">
+      let city = "Beius";
       ReactDOM.render(
-        <h1>Hiiiii</h1>,
+        <h1 className="heading">Hiiiii {city}</h1>,
         document.getElementById("root")
       );
     </script>
