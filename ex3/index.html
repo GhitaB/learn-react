@@ -20,15 +20,17 @@
     <script type="text/babel">
       const Lake = ({name}) => <h1>{name}</h1>;
 
-      const App = () => {
-        return (
-          <div>
-            <Lake name="asdasd" />
-            <Lake name="dfgdfgdfg" />
-            <Lake name="asdasddfgdfg" />
-            <Lake name="asddfgdfgasd" />
-          </div>
-        )
+      class App extends React.Component {
+        render() {
+          return (
+            <div>
+              <Lake name="asdasd" />
+              <Lake name="dfgdfgdfg" />
+              <Lake name="asdasddfgdfg" />
+              <Lake name="asddfgdfgasd" />
+            </div>
+          )
+        }
       }
 
       ReactDOM.render(
