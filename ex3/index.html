@@ -26,11 +26,13 @@
         }
 
         logIn = () => this.setState({loggedIn: true})
+        logOut = () => this.setState({loggedIn: false})
 
         render() {
           return (
             <div>
               <button onClick={this.logIn}>Login</button>
+              <button onClick={this.logOut}>Logout</button>
               <div>
                 <div>You are {this.state.loggedIn ? "logged in" : "not logged in"}.</div>
                 <Lake name="asdasd" />
