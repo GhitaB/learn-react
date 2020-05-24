@@ -10,10 +10,24 @@
     <script type="text/javascript">
       ReactDOM.render(
         // React.createElement("h1", null, "Hello World"),
+
+        /*
         React.createElement(
           "h1",
           {"style": {"color": "blue"}},
           "Helloooooooooooo"),
+        document.getElementById("root")
+        */
+
+        React.createElement(
+          "div",
+          null,
+          React.createElement(
+            "h1",
+            null,
+            "Yeeeeeeee"
+          )
+        ),
         document.getElementById("root")
       );
     </script>
