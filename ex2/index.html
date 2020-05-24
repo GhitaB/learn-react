@@ -29,16 +29,26 @@
       //   </div>
       // )
 
-      const Hello = () => {
+      // const Hello = () => {
+      //   return (
+      //     <div className="heading">
+      //       <h1>Welcome</h1>
+      //     </div>
+      //   )
+      // }
+
+      const Hello = (props) => {
+        console.log(props)
         return (
           <div className="heading">
-            <h1>Welcome</h1>
+            <h1>Welcome to {props.library}</h1>
+            <p>{props.message}</p>
           </div>
         )
       }
 
       ReactDOM.render(
-        <Hello />,
+        <Hello library="React" message="Enjoy" />,
         document.getElementById("root")
       );
     </script>
