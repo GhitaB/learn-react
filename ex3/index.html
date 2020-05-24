@@ -25,14 +25,19 @@
           loggedIn: false
         }
 
+        logIn = () => this.setState({loggedIn: true})
+
         render() {
           return (
             <div>
-              <div>You are {this.state.loggedIn ? "logged in" : "not logged in"}.</div>
-              <Lake name="asdasd" />
-              <Lake name="dfgdfgdfg" />
-              <Lake name="asdasddfgdfg" />
-              <Lake name="asddfgdfgasd" />
+              <button onClick={this.logIn}>Login</button>
+              <div>
+                <div>You are {this.state.loggedIn ? "logged in" : "not logged in"}.</div>
+                <Lake name="asdasd" />
+                <Lake name="dfgdfgdfg" />
+                <Lake name="asdasddfgdfg" />
+                <Lake name="asddfgdfgasd" />
+              </div>
             </div>
           )
         }
